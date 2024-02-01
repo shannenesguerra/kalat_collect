@@ -4,20 +4,28 @@
     
    /* Colors */
    --black: #000;
+   --white: #fff;
    --first-color: #B1D9B3;
-}
+   --second-color: #55A935;
 
-/*========== FIRST PAGE ==========*/
+   /* Font Sizes, Weights */
+   --small-font-size: 16px;
+   --normal-font-size: 20px;
+   --big-font-size: 80px;
+
+   --semi-bold: 400;
+   --bold: 700;
+}
 
 * {
     font-family: 'Inter', sans-serif;
 }
 
-.first-page-main {
+/*========== FIRST PAGE ==========*/
+
+.first-page-body {
     margin: 60px;
 }
-
-/* First Page | Navbar */
 
 .first-page-profile {
     float: right;
@@ -38,21 +46,21 @@
 }
 
 .first-page-qoute {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: var(--normal-font-size);
+    font-weight: var(--semi-bold);
     padding-top: 50px;
     margin-bottom: 40px;
 }
 
 .first-page-title {
     margin-top: 0;
-    font-size: 80px;
-    font-weight: 700;
+    font-size: var(--big-font-size);
+    font-weight: var(--bold);
 }
 
 .learn-more-button {
     padding: 20px 50px; 
-    font-size: 16px; 
+    font-size: var(--small-font-size); 
     border: 1px solid var(--black);
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -61,8 +69,8 @@
 .button-link {
     color: var(--black);
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 400;
+    font-size: var(--normal-font-size);
+    font-weight: var(--semi-bold);
 }
 
 /* First Page | Socials */
@@ -77,7 +85,70 @@
     color: var(--black);
     text-decoration: none;
     font-size: 25px;
-    font-weight: 400;
+    font-weight: var(--semi-bold);
     padding: 10px;
 }
 
+/*========== SECOND  PAGE ==========*/
+
+.second-page-body {
+    background: var(--first-color);
+}
+
+.navbar, .about-us-main, .services-page-main, .partnership-page-main, .booking-page-main, .contact-page-main {
+    margin: 60px;
+}
+
+#about-us-page, #partnership-page, #contact-page {
+    background: var(--white);
+}
+
+/* Navbar */
+
+.navbar-nav {
+  
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 700;
+}
+
+.second-page-profile {
+    float: right;
+    text-decoration: none;
+    font-size: 50px;
+    color: var(--black);
+}
+
+/* Second Page | Socials */
+
+.second-page-home-social {
+    position: absolute;
+    bottom: 50px; 
+    right: 60px; 
+}
+
+.second-page-home-social-icon {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: var(--semi-bold);
+    padding: 10px;
+}
+
+/* Second Page | About Us Section */
+
+#about-us-page {
+    margin-top: 40%;
+}
+
+.about-us-main {
+    padding-top: 5%;
+}
+
+.about-us-desc h2 {
+    font-size: var(--normal-font-size);
+    color: var(--second-color);
+}

@@ -1,2 +1,2 @@
-Project in Information Technology
+Project in Information Security
 for documentation and testing purpose only

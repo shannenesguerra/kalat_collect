@@ -5,8 +5,8 @@
    /* Colors */
    --black: #000;
    --white: #fff;
-   --first-color: #B1D9B3;
-   --second-color: #55A935;
+   --first-color: #A9EADF;
+   --second-color: #00A6AB;
    --third-color: #EEAE2A;
 
    /* Font Sizes, Weights */
@@ -18,9 +18,21 @@
    --bold: 700;
 }
 
-* {
+* { 
     font-family: 'Inter', sans-serif;
 }
+
+
+.go-to-section {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+ }
+   
 
 /*========== FIRST PAGE ==========*/
 
@@ -104,6 +116,7 @@
     padding: 20px;
 }
 
+
 .navbar-nav .nav-link {
     font-size: 18px; 
 }
@@ -131,6 +144,13 @@
     justify-content: center; 
     align-items: center; 
     padding-top: 5%;
+    padding-left: 5%;
+    letter-spacing: 10px;
+}
+.second-page-home-main h2 {
+    font-size: 80px;
+    font-weight: bold;
+
 }
 
 .second-page-home-social {
@@ -180,8 +200,8 @@
 /* Second Page | Services Section */
 
 .services-page-main {
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
     display: flex;
     flex-direction: column; 
     justify-content: center; 
@@ -194,7 +214,7 @@
 }
 
 .second-services-list {
-    padding-top: 5%;
+    padding-bottom: 5%;
 }
 .second-page-services-icon {
     padding: 20px;
@@ -233,7 +253,7 @@
     width: 200px;
     padding: 15px 45px; 
     font-size: var(--small-font-size); 
-    color: var(--first-color);
+    color: var(--third-color);
     background-color: var(--black);
     cursor: pointer;
 }
@@ -308,6 +328,7 @@
 
 .footer-description p {
     padding-left: 50px;
+    text-align: left;
 }
 
 .useful-items, .support-item{
@@ -374,7 +395,7 @@
     margin-top: 5%;
     border-radius: 0;
     color: var(--white);
-    background-color: #1B2E0D;
+    background-color: #EEAE2A;
     width: 350px;
     height: 50px;
 }
@@ -422,7 +443,7 @@
     margin-top: 5%;
     border-radius: 0;
     color: var(--white);
-    background-color: #1B2E0D;
+    background-color: #EEAE2A;
     width: 350px;
     height: 50px;
 }
@@ -434,8 +455,8 @@
 /*========== animation & hover ==========*/
 
 .learn-more-button:hover {
-    color: var(--second-color);
-    border: 1px solid var(--second-color);
+    color: var(--black);
+    border: 1px solid var(--third-color);
     background-color: var(--white);
     transition: 0.2s;
 }
@@ -458,13 +479,13 @@
 }
 
 .loginbutton:hover{
-    background-color: var(--black);
-    color: var(--second-color);
+    background-color: var(--third-color);
+    color: var(--black);
 }
 
 .registerbutton:hover{
     text-decoration: none;
-    background-color: var(--black);
-    color: var(--second-color);
+    background-color: var(--third-color);
+    color: var(--black);
 }
 

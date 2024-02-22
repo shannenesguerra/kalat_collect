@@ -77,6 +77,7 @@
     border: 1px solid var(--black);
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
 }
 
 /* First Page | Socials */
@@ -112,6 +113,79 @@
 
 /* Navbar */
 
+nav {
+    padding: 10px;
+}
+.containernav{
+    max-width: 1200px; /* Limiting the container width */
+    margin: 0 auto; /* Centering the container */
+    display: flex; /* Using flexbox for layout */
+    align-items: center; /* Centering items vertically */
+    justify-content: space-between; /* Distributing items evenly */
+}
+
+.nav_logo img {
+    width: 150px; /* Adjust the logo width as needed */
+}
+
+
+/* searchbar */
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    padding: 20px 20px;
+    border: 2px solid #EEAE2A;
+    border-radius: 30px 0 0 30px;
+    margin: 0;
+    font-size: 24px; 
+    width: 1000px;
+}
+
+#search-button {
+    padding: 20px 20px;
+    background-color: #EEAE2A66;
+    width: 100px;
+    color: #000000;
+    border: none;
+    border-radius: 0 30px 30px 0; 
+    cursor: pointer;
+    font-size: 24px;
+}
+
+#search-button:hover {
+    background-color: #EEAE2A;
+}
+
+
+
+/* Styles for the menu */
+.menu ul {
+    list-style-type: none; /* Removing default list styles */
+    display: flex; /* Using flexbox for layout */
+}
+
+.menu li {
+    margin-right: 100px; 
+    font-weight: bold;
+}
+
+
+.menu a {
+    text-decoration: none; /* Removing default underline from links */
+    color: #333; /* Setting text color */
+}
+
 .navbar-nav .nav-item {
     padding: 20px;
 }
@@ -132,6 +206,7 @@
     text-decoration: none;
     font-size: 50px;
     color: var(--black);
+    color: #333; /* Setting icon color */
 }
 
 /* Second Page | Home */
@@ -144,7 +219,7 @@
     justify-content: center; 
     align-items: center; 
     padding-top: 5%;
-    padding-left: 5%;
+
     letter-spacing: 10px;
 }
 .second-page-home-main h2 {
@@ -199,6 +274,12 @@
 
 /* Second Page | Services Section */
 
+.second-page-section {
+    background-color: #f2f2f2;
+    padding: 40px;
+    text-align: center;
+}
+
 .services-page-main {
     padding-top: 5%;
     padding-bottom: 5%;
@@ -213,13 +294,41 @@
     font-weight: var(--bold);
 }
 
+
+.second-page-services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .second-services-list {
     padding-bottom: 5%;
 }
 .second-page-services-icon {
+    flex: 1 1 300px;
+    max-width: 300px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 10px;
     padding: 20px;
-    text-decoration: none;
-    color: var(--black);
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.second-page-services-icon img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.second-page-services-icon h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Style for service icon description */
+.second-page-services-icon p {
+    font-size: 16px;
+    color: #666;
 }
 
 #services-icon {
@@ -229,6 +338,9 @@
 /* Second Page | Partnership Section */
 
 .partnership-page-main {
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
     padding-top: 10%;
     padding-bottom: 10%;
 }
@@ -236,14 +348,44 @@
 .partnership-page-main h2 {
     font-size: 30px;
     font-weight: var(--bold);
+    margin-bottom: 20px;
 }
+
+.partnership-page-main p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.partnership-container {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+   
+}
+
+.partnership-left-column {
+    flex: 1;
+    text-align: justify;
+}
+
+.partnership-right-column {
+    flex: 1;
+    text-align: justify;
+}
+
+.partnership-left-column h2 {
+    font-weight: bold;
+}
+
 
 .register-buttons {
     padding-right: 10%;
     margin-top: 20%;
+    margin-left: 70%;
     display: flex;
+    justify-content: center;
     gap: 100px;
 }
+
 
 /* buttons design*/
 .register-button, .contact-us-button, .book-now-button, .read-more-button {
@@ -303,12 +445,23 @@
     padding-bottom: 5%;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .contact-page-main h1 {
     font-size: 40px;
     font-weight: var(--bold);
     margin-right: 10%;
 }
 
+.second-page-contact-list {
+    margin-top: 20px;
+    text-align: justify;
+    margin-left: 30px;
+}
 .second-page-contact-list h2 {
     font-size: 25px;
 }
@@ -319,24 +472,57 @@
     margin-left: -5%;
     padding-top: 5%;
     color: #6C6C6C;
+    padding: 20px 0;
+}
+.footer_container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.footer-logo img {
+    display: block;
+    margin: 0 auto;
+    width: 200px; 
+}
+
+
+.footer_row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_row > div {
+    flex: 1;
+    margin-right: 20px;
+}
+.footer-description {
+    flex-basis: calc(50% - 20px);
 }
 
 .footer-description h2, .footer-useful-links h2, .footer-support-links h2 {
     font-size: var(--normal-font-size);
-    padding-left: 35px;
+  
+    color: #333;
+    margin-top: 20px;
 }
+
 
 .footer-description p {
-    padding-left: 50px;
-    text-align: left;
+   
+    text-align: justify;
+    color: #666;
 }
 
-.useful-items, .support-item{
-    list-style: none;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
+.footer-useful-links{
+    margin-left: 130px;
 }
+.useful-items,
+.support-item {
+    list-style: none;
+    padding: 0;
+}
+
 
 .footer-nav-link {
     text-decoration: none;
@@ -359,49 +545,89 @@
 
 /*========== LOGIN PAGE ==========*/
 
+.container-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .loginpageleft {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
- 
+    flex: 1;
 }
+
 .loginpagelefttext {
     font-size: 70px;
     letter-spacing: 5px;
-    margin-right: 400px;
 }
-
 
 .logincontainer {
     border: 3px solid var(--black);
     padding: 20px;
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 100px; /* Adjusted width */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
     background-color: #D9D9D9;
+    flex: 1;
+    margin-left: 20px;
 }
+
 
 .loginform .form-control {
     border: none;
     border-bottom: 1px solid var(--black); 
     border-radius: 0; 
     background-color: #D9D9D9;
+    margin: 20px;
+    width: calc(100% - 40px); /* Adjusted width */
+    max-width: 400px; /* Added max-width */
 }
 
-.loginbutton{
+.loginbutton {
     border: none;
     margin-top: 5%;
     border-radius: 0;
     color: var(--white);
     background-color: #EEAE2A;
-    width: 350px;
+    width: calc(100% - 40px); /* Adjusted width */
+    max-width: 400px; /* Added max-width */
     height: 50px;
 }
 
 .form-control {
     padding-left: 30px;
+    width: 100%; /* Added width */
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Add this line to center horizontally */
+}
+
+.input-icon {
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.input-icon i {
+    font-size: 1.2em; /* Adjust icon size */
+    color: #333; /* Adjust icon color */
+}
+
+.input-group-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.input-group-prepend {
+    align-self: flex-start;
 }
 
 .input-group-text {
@@ -412,24 +638,31 @@
 
 .forgotpass {
     float: left;
-    padding-left: 5%;
     font-size: 12px;
 }
 
+
 /*========== REGISTER PAGE ==========*/
+
+.containerregister {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto; /* Center the container */
+}
 
 .registercontainer {
     background-color: #D9D9D9;
     border: 3px solid var(--black);
     padding: 40px;
-    width: 80%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 .register-main h1 {
     color: #6E6E6E;
+    text-align: center;
+}
+
+.register-form-container {
+    margin-top: 20px; /* Space between title and form */
 }
 
 .register-form {
@@ -437,20 +670,29 @@
     font-weight: var(--bold);
 }
 
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px; /* Space between rows */
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 15px; /* Space between form elements */
+}
+
 .registerbutton {
     text-decoration: none;
     border: none;
-    margin-top: 5%;
+    margin-top: 20px; /* Space between form and button */
     border-radius: 0;
     color: var(--white);
     background-color: #EEAE2A;
-    width: 350px;
+    width: 100%; /* Button width */
+    max-width: 350px; /* Maximum button width */
     height: 50px;
 }
 
-.container-register{
-    height: 80%;
-}
 
 /*========== animation & hover ==========*/
 
@@ -468,7 +710,7 @@
     transition: 0.2s;
 }
 
-.nav-link:hover {
+.navlink:hover {
     color: var(--second-color);
 }
 

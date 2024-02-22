@@ -45,101 +45,51 @@
             </div>
         </section>
 
-
-        <div class="container  d-flex justify-content-center align-items-center ">
-            <div class="row registercontainer">
-                <div class="register-main p-3 d-flex justify-content-center">
-                    <h1>
-                        REGISTER
-                    </h1>
+        <div class="containerregister">
+            <div class="registercontainer">
+                <div class="register-main p-3">
+                    <h1>REGISTER</h1>
                 </div>
-                <div class="container">
-                    <div class="row ">
-                        <div class="col-md-12">
-                            <form class="loginform">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class=" p-3">
-                                            <div class="mb-3">
-                                                <input type="text" class="register-form form-control" id="firstName"
-                                                    placeholder="First Name">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class=" p-3">
-                                            <div class="mb-3">
-                                                <input type="text" class="register-form form-control" id="lastName"
-                                                    placeholder="Last Name">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class=" p-3">
-                                            <div class="mb-3">
-                                                <input type="email" class="register-form form-control" id="email"
-                                                    placeholder="Email">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class=" p-3">
-                                            <div class="mb-3">
-                                                <input type="text" class="register-form form-control" id="contactNumber"
-                                                    placeholder="Contact Number">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class=" p-3">
-                                            <div class="mb-3">
-                                                <input type="text" class="register-form form-control" id="address"
-                                                    placeholder="Address">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class=" p-3">
-                                            <div class="mb-3">
-                                                <input type="password" class="register-form form-control" id="password"
-                                                    placeholder="Password">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class=" p-3">
-                                            <div class="mb-3">
-                                                <input type="password" class="register-form form-control"
-                                                    id="confirmPassword" placeholder="Confirm Password">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!--<div class="d-flex justify-content-center">
-                                    <a href="/html_files/login.html" role="button">
-                                        <button type="submit" class="btn registerbutton">Register</button>
-                                    </a>
-                                </div>-->
-                                <div class="d-flex justify-content-center">
-                                    <button onclick="window.location.href='/html_files/login.html'" type="button"
-                                        class="btn registerbutton">S U B M I T</button>
-                                </div>
-
-                            </form>
-
+                <div class="register-form-container">
+                    <form class="loginform">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" class="register-form form-control" id="firstName" placeholder="First Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="register-form form-control" id="lastName" placeholder="Last Name">
+                            </div>
                         </div>
-                    </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="email" class="register-form form-control" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="text" class="register-form form-control" id="contactNumber" placeholder="Contact Number">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <input type="text" class="register-form form-control" id="address" placeholder="Address">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="password" class="register-form form-control" id="password" placeholder="Password">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="password" class="register-form form-control" id="confirmPassword" placeholder="Confirm Password">
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <button onclick="window.location.href='/html_files/login.html'" type="button" class="btn registerbutton">S U B M I T</button>
+                        </div>
+                    </form>
                 </div>
-
             </div>
         </div>
+        
+        
     </main>
 
     <!--==================== MAIN JS ====================-->

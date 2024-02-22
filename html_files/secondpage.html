@@ -19,28 +19,18 @@
     <!--==================== MAIN ====================-->
     <main class="second-page-main">
         <section class="second-page-home">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
+            <nav>
+                <div class="containernav">
                     <a href="#" class="nav_logo">
-                        <img src="/images/logo.png" width="300">
+                        <img src="/images/logo.png" width="300" alt="Logo">
                     </a>
-                    <div class="mx-auto">
-                        <div class="collapse navbar-collapse">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-between">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">HOME</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">ABOUT US</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">SERVICES</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">CONTACT US</a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="menu">
+                        <ul>
+                            <li><a class="navlink" href="#">HOME</a></li>
+                            <li><a class="navlink" href="#">ABOUT US</a></li>
+                            <li><a class="navlink" href="#">SERVICES</a></li>
+                            <li><a class="navlink" href="#">CONTACT US</a></li>
+                        </ul>
                     </div>
                     <a href="#" class="second-page-profile">
                         <i class="bi bi-person-circle"></i>
@@ -48,11 +38,18 @@
                 </div>
             </nav>
 
+
             <div class="second-page-home-main">
                 <h2>BEGIN YOUR REST</h2>
                 <h2>DAY WITH US!</h2>
             </div>
 
+            <div class="search-container">
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search...">
+                    <button id="search-button"><i class="bi bi-search"></i></button>
+                </div>
+            </div>
             <div class="second-page-home-social">
                 <div class="second-page-home-social-links">
                     <a href="#" class="second-page-home-social-icon">
@@ -70,38 +67,40 @@
 
         <section class="second-page-section" id="about-us-page">
             <div class="about-us-main">
-                <div class="about-us-desc row justify-content-evenly">
-                    <div class="col-4">
+                <div class="about-us-desc">
+                    <div style="width: 50%; float: left;">
                         <h2>WHY CHOOSE US</h2>
                         <p>*insert reason*</p>
                     </div>
-
-                    <div class="read-more-main col-4">
+                    <div style="width: 50%; float: right;">
                         <p>*insert description*</p>
                         <div class="read-more-button-main">
-                            <button type="submit" class="read-more-button btn btn-primary">READ MORE</button>
+                            <button type="submit" class="read-more-button"
+                                style="background-color: rgb(0, 0, 0); color: EEAE2A;">READ MORE</button>
                         </div>
                     </div>
+                    <div style="clear: both;"></div>
                 </div>
 
-                <div class="second-page-main-list container text-center">   
-                    <div class="second-page-list row">
-                        <a class="second-page-list-icon col">
+                <div class="second-page-main-list text-center">
+                    <div class="second-page-list">
+                        <a class="second-page-list-icon" style="width: 25%; float: left;">
                             <h2><span>01.</span> SCHEDULE SERVICE</h2>
                             <p>*insert description*</p>
                         </a>
-                        <a class="second-page-list-icon col">
+                        <a class="second-page-list-icon" style="width: 25%; float: left;">
                             <h2><span>02.</span> SAME DAY SERVICE</h2>
                             <p>*insert description*</p>
                         </a>
-                        <a class="second-page-list-icon col">
-                            <h2><span>01.</span> TRACKING</h2>
+                        <a class="second-page-list-icon" style="width: 25%; float: left;">
+                            <h2><span>03.</span> TRACKING</h2>
                             <p>*insert description*</p>
                         </a>
-                        <a class="second-page-list-icon col">
-                            <h2><span>01.</span> BOOKING HISTORY</h2>
+                        <a class="second-page-list-icon" style="width: 25%; float: left;">
+                            <h2><span>04.</span> BOOKING HISTORY</h2>
                             <p>*insert description*</p>
                         </a>
+                        <div style="clear: both;"></div>
                     </div>
                 </div>
             </div>
@@ -110,126 +109,128 @@
         <section class="second-page-section" id="services-page">
             <div class="services-page-main">
                 <h2>HOW IT WORKS</h2>
-                <div class="second-page-services-list container text-center">
-                    <div class="second-services-list row">
-                        <a class="second-page-services-icon col">
-                            <img id="services-icon" src="/images/services_icon.png" width="150">
-                            <h2>Select a Service</h2>
-                            <p>Effortless scheduling with just the click of a button. Your rest day begins with a booking process that is convenient and tailored to your schedule.</p>
-                        </a>
-                        <a class="second-page-services-icon col">
-                            <img id="services-icon" src="/images/services_icon.png" width="150">
-                            <h2>Schedule</h2>
-                            <p>Choose a home service that meets your demands based on costs, level of expertise, and reviews.</p>
-                        </a>
-                        <a class="second-page-services-icon col">
-                            <img id="services-icon" src="/images/services_icon.png" width="150">
-                            <h2>Pay/Tip</h2>
-                            <p>Pay the professional you have chosen directly after the service has been completed.</p>
-                        </a>
-                        <a class="second-page-services-icon col">
-                            <img id="services-icon" src="/images/services_icon.png" width="150">
-                            <h2>Review</h2>
-                            <p>You can send a review about the service you experienced for future customers to view. </p>
-                        </a>
+                <div class="second-page-services-list">
+                    <div class="second-page-services-icon">
+                        <img src="/images/services_icon.png" alt="Service Icon">
+                        <h2>Select a Service</h2>
+                        <p>Effortless scheduling with just the click of a button. Your rest day begins with a booking
+                            process that is convenient and tailored to your schedule.</p>
+                    </div>
+                    <div class="second-page-services-icon">
+                        <img src="/images/services_icon.png" alt="Service Icon">
+                        <h2>Schedule</h2>
+                        <p>Choose a home service that meets your demands based on costs, level of expertise, and
+                            reviews.</p>
+                    </div>
+                    <div class="second-page-services-icon">
+                        <img src="/images/services_icon.png" alt="Service Icon">
+                        <h2>Pay/Tip</h2>
+                        <p>Pay the professional you have chosen directly after the service has been completed.</p>
+                    </div>
+                    <div class="second-page-services-icon">
+                        <img src="/images/services_icon.png" alt="Service Icon">
+                        <h2>Review</h2>
+                        <p>You can send a review about the service you experienced for future customers to view.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="second-page-section" id="partnership-page">
-            <div class="partnership-page-main row justify-content-evenly">
-                <h2 class="col-4">JOIN AND REGISTER TO BE A PRO</h2>
-                <p class="col-4">If you aare a home service provider looking to expand and improve your effiency, let's talk about how we can help you become our Home Service Provider</p>
-                <div class="register-buttons row justify-content-end">
-                    <div class="register-button-main col-4">
+            <div class="partnership-page-main">
+                <div class="partnership-container">
+                    <div class="partnership-left-column">
+                        <h2>JOIN AND REGISTER TO BE A PRO</h2>
+                    </div>
+                    <div class="partnership-right-column">
+                        <p>If you are a home service provider looking to expand and improve your efficiency, let's talk
+                            about how we can help you become our Home Service Provider</p>
+                    </div>
+                </div>
+
+                <div class="register-buttons">
+                    <div class="register-button-main">
                         <a href="/html_files/register.html" role="button">
-                            <button type="submit" class="register-button btn btn-primary">REGISTER</button>
+                            <button type="submit" class="register-button">REGISTER</button>
                         </a>
                     </div>
-                    <div class="contact-us-button-main col-4">
-                        <button type="submit" class="contact-us-button btn btn-primary">CONTACT US</button>
+                    <div class="contact-us-button-main">
+                        <button type="submit" class="contact-us-button">CONTACT US</button>
                     </div>
                 </div>
             </div>
         </section>
 
-       
+
 
         <section class="second-page-section" id="contact-page">
-            <div class="contact-page container text-center">
-                <div class="contact-page-main row">
-                    <h1 class="col">GOT SOME QUESTIONS?</h1>
-                    <div class="second-page-contact-list col">
+            <div class="contact-page text-center">
+                <div class="contact-page-main flex-container">
+                    <h1>GOT SOME QUESTIONS?</h1>
+                    <div class="second-page-contact-list">
                         <h2>Facebook</h2>
                         <p>www.facebook.com/homegleph</p>
                     </div>
-                    <div class="second-page-contact-list col">
+                    <div class="second-page-contact-list">
                         <h2>Email</h2>
                         <p>Message us homegleph@gmail.com</p>
                     </div>
-                    <div class="second-page-contact-list col">
+                    <div class="second-page-contact-list">
                         <h2>Phone</h2>
                         <p>Contact Us +639352064589</p>
                     </div>
                 </div>
             </div>
         </section>
+
+
     </main>
     <!--==================== FOOTER ====================-->
 
     <footer class="footer">
         <div class="footer_bg">
-            <div class="footer_container container text-center">
-                <div class="row">
-                    <div class="footer-logo col">
+            <div class="footer_container">
+                <div class="footer_row">
+                    <div class="footer-logo">
                         <a href="#" class="footer-logo-main">
-                            <img src="/images/logo.png" width="100">
+                            <img src="/images/logo.png" width="100" alt="Logo">
                         </a>
                     </div>
-                    <div class="footer-description col">
+                    <div class="footer-description">
                         <h2>Homegle</h2>
                         <p>Bringing Comfort to Your Doorstep. Homegle –
-                         Where Every Service Gets the Royal Treatment.
-                           Your Home, Our Expertise. Book Now for a
+                            Where Every Service Gets the Royal Treatment.
+                            Your Home, Our Expertise. Book Now for a
                             Sparkling Experience!</p>
                     </div>
-                    <div class="footer-useful-links col">
+                    <div class="footer-useful-links">
                         <h2>Useful Links</h2>
                         <ul class="useful-items">
-                            <li class="nav-item">
-                                <a class="footer-nav-link" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="footer-nav-link" href="#">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="footer-nav-link" href="#">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="footer-nav-link" href="#">Contact Us</a>
-                            </li>
+                            <li>Home</li>
+                            <li>About Us</li>
+                            <li>Services</li>
+                            <li>Contact Us</li>
                         </ul>
                     </div>
 
-                    <div class="footer-support-links col">
+                    <div class="footer-support-links">
                         <h2>Support</h2>
                         <ul class="support-item">
-                            <li class="nav-item">
-                                <a class="footer-nav-link" href="#">Terms of Service</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="footer-nav-link" href="#">Privacy Policy</a>
-                            </li>
+                            <li>Terms of Service</li>
+                            <li>Privacy Policy</li>
                         </ul>
                     </div>
+
                 </div>
+
             </div>
             <div class="footer_copyright">
                 <p id="footer_copy"> Copyright 2023 &#169; KalatCollect. All rights reserved.</p>
             </div>
         </div>
     </footer>
+
+
 
     <!--==================== MAIN JS ====================-->
     <script src="js_files/main.js"></script>

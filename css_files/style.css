@@ -36,6 +36,7 @@
 
 /*========== FIRST PAGE ==========*/
 
+
 .first-page-body {
     margin: 60px;
 }
@@ -79,6 +80,20 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-decoration: none;
 }
+
+
+/* First Page | Nav */
+.first-page-nav-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Ensure the flexbox spans the full width */
+}
+
+.first-page-profile {
+    margin-left: auto; /* Move the icon to the right */
+}
+
 
 /* First Page | Socials */
 
@@ -568,14 +583,13 @@ nav {
     border: 3px solid var(--black);
     padding: 20px;
     height: 600px;
-    width: 100px; /* Adjusted width */
+    width: 600px; /* Adjusted width */
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     background-color: #D9D9D9;
-    flex: 1;
-    margin-left: 20px;
+    margin-right: 300px;
 }
 
 
@@ -602,7 +616,8 @@ nav {
 
 .form-control {
     padding-left: 30px;
-    width: 100%; /* Added width */
+    width: 100%;
+    font-size: 25px;
 }
 
 .input-group {
@@ -612,7 +627,8 @@ nav {
 }
 
 .input-icon {
-    margin-right: 10px; /* Adjust as needed */
+    margin-right: 10px; 
+    font-size: 20px;
 }
 
 .input-icon i {
@@ -638,7 +654,7 @@ nav {
 
 .forgotpass {
     float: left;
-    font-size: 12px;
+    font-size: 20px;
 }
 
 

@@ -117,7 +117,7 @@
     background: var(--first-color);
 }
 
-.navbar, .second-page-home-main, .about-us-main, .services-page-main, 
+.second-page-home-main, .about-us-main, .services-page-main, 
 .partnership-page-main, .booking-page-main, .contact-page-main {
     margin: 60px;
 }
